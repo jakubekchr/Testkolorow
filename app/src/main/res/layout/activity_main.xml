@@ -16,6 +16,7 @@
  -->
 
     <TextView
+        android:id="@+id/textviewpyt"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
@@ -33,6 +34,7 @@
 
 
         <Button
+            android:onClick="sprawdzOK"
             android:layout_margin="5dp"
             android:textSize="16sp"
             android:textColor="#7D41FF"
@@ -43,7 +45,9 @@
             android:backgroundTint="#FF0000"
             android:text="Czerwony" />
 
+
         <Button
+            android:onClick="ukryj"
             android:layout_margin="5dp"
             android:textSize="16sp"
             android:textColor="#7D41FF"
@@ -54,6 +58,7 @@
             android:backgroundTint="#FFC107"
             android:text="Zolty" />
 
+
         <Button
             android:layout_margin="5dp"
             android:textSize="16sp"
@@ -63,7 +68,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="#F44336"
-            android:text="Pomaranczowy" />
+            android:text="Pomaranczowy"
+            android:onClick="ukryj"
+            />
     </LinearLayout>
 
     <LinearLayout
@@ -93,7 +100,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Zielony" />
+            android:text="Zielony"
+            android:onClick="ukryj"/>
 
         <Button
             android:backgroundTint="#2196F3"
@@ -104,7 +112,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Niebieski" />
+            android:text="Niebieski"
+            android:onClick="ukryj"/>
     </LinearLayout>
 
 </LinearLayout>
